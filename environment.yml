@@ -1,12 +1,16 @@
-name: example-environment
+name: lfpy
 channels:
   - conda-forge
 dependencies:
-  - python
+  - python=3
   - numpy
+  - scipy
+  - matplotlib
+  - Cython
+  - h5py
+  - gxx_linux-64
+  - neuron=*=mpi_*
+  - pytest
   - pip
   - pip:
-    - nbgitpuller
-    - sphinx-gallery
-    - pandas
-    - matplotlib
+    - LFPy==1.3.3
